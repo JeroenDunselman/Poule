@@ -12,6 +12,10 @@
 		A9711EC2229F152B005242C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9711EC0229F152B005242C8 /* Main.storyboard */; };
 		A9711EC4229F1557005242C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9711EC3229F1557005242C8 /* Assets.xcassets */; };
 		A9711EC7229F1557005242C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9711EC5229F1557005242C8 /* LaunchScreen.storyboard */; };
+		A9711ECF229F15EB005242C8 /* Poule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9711ECE229F15EB005242C8 /* Poule.swift */; };
+		A9E5827322A47E7D00DDD8A3 /* MultiRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5827222A47E7D00DDD8A3 /* MultiRun.swift */; };
+		A9EE290722A3CA8E00BFE3F2 /* TeamResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE290622A3CA8E00BFE3F2 /* TeamResult.swift */; };
+		A9EE290922A3CACE00BFE3F2 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE290822A3CACE00BFE3F2 /* Match.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A9711EC3229F1557005242C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9711EC6229F1557005242C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9711EC8229F1557005242C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9711ECE229F15EB005242C8 /* Poule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poule.swift; sourceTree = "<group>"; };
+		A9E5827222A47E7D00DDD8A3 /* MultiRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiRun.swift; sourceTree = "<group>"; };
+		A9EE290622A3CA8E00BFE3F2 /* TeamResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResult.swift; sourceTree = "<group>"; };
+		A9EE290822A3CACE00BFE3F2 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				A9711EBC229F152A005242C8 /* AppDelegate.swift */,
 				A9711EBE229F152A005242C8 /* ViewController.swift */,
+				A9711ECE229F15EB005242C8 /* Poule.swift */,
+				A9EE290822A3CACE00BFE3F2 /* Match.swift */,
+				A9EE290622A3CA8E00BFE3F2 /* TeamResult.swift */,
 				A9711EC0229F152B005242C8 /* Main.storyboard */,
 				A9711EC3229F1557005242C8 /* Assets.xcassets */,
 				A9711EC5229F1557005242C8 /* LaunchScreen.storyboard */,
 				A9711EC8229F1557005242C8 /* Info.plist */,
+				A9E5827222A47E7D00DDD8A3 /* MultiRun.swift */,
 			);
 			path = Poule;
 			sourceTree = "<group>";
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9711ECF229F15EB005242C8 /* Poule.swift in Sources */,
+				A9EE290722A3CA8E00BFE3F2 /* TeamResult.swift in Sources */,
 				A9711EBF229F152A005242C8 /* ViewController.swift in Sources */,
+				A9EE290922A3CACE00BFE3F2 /* Match.swift in Sources */,
 				A9711EBD229F152A005242C8 /* AppDelegate.swift in Sources */,
+				A9E5827322A47E7D00DDD8A3 /* MultiRun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +301,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 447M47227T;
 				INFOPLIST_FILE = Poule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.Poule;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,11 +320,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 447M47227T;
 				INFOPLIST_FILE = Poule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.Poule;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
