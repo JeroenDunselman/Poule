@@ -64,6 +64,7 @@
 			children = (
 				A9711EBC229F152A005242C8 /* AppDelegate.swift */,
 				A9711EBE229F152A005242C8 /* ViewController.swift */,
+				A9E5827222A47E7D00DDD8A3 /* MultiRun.swift */,
 				A9711ECE229F15EB005242C8 /* Poule.swift */,
 				A9EE290822A3CACE00BFE3F2 /* Match.swift */,
 				A9EE290622A3CA8E00BFE3F2 /* TeamResult.swift */,
@@ -71,7 +72,6 @@
 				A9711EC3229F1557005242C8 /* Assets.xcassets */,
 				A9711EC5229F1557005242C8 /* LaunchScreen.storyboard */,
 				A9711EC8229F1557005242C8 /* Info.plist */,
-				A9E5827222A47E7D00DDD8A3 /* MultiRun.swift */,
 			);
 			path = Poule;
 			sourceTree = "<group>";

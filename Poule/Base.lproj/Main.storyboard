@@ -45,35 +45,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-cS-yMP">
-                                <rect key="frame" x="16" y="20" width="343" height="266"/>
-                            </containerView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nJM-Uc-4gV">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nJM-Uc-4gV">
                                 <rect key="frame" x="6" y="19" width="363" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderA:" destination="BYZ-38-t0r" eventType="valueChanged" id="fup-Wv-Zr4"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="W79-Og-otU">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="W79-Og-otU">
                                 <rect key="frame" x="6" y="67" width="363" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="0Rg-2C-B0B"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderB:" destination="BYZ-38-t0r" eventType="valueChanged" id="fVn-Ky-oXO"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TF0-fo-2hx">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TF0-fo-2hx">
                                 <rect key="frame" x="6" y="117" width="363" height="30.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderC:" destination="BYZ-38-t0r" eventType="valueChanged" id="r3G-4I-3P4"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-CK-Obk">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-CK-Obk">
                                 <rect key="frame" x="6" y="179.5" width="363" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="1G8-tp-qbd"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderD:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Jq-x9-o3h"/>
                                 </connections>
@@ -81,41 +76,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TF0-fo-2hx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Qt-rm-qid"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DNi-5b-aco" secondAttribute="bottom" constant="20" id="5UG-Dv-Jps"/>
-                            <constraint firstItem="W79-Og-otU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fy-vm-bqY"/>
                             <constraint firstItem="5iA-LF-Ri6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="AVe-CE-aG7"/>
                             <constraint firstItem="DNi-5b-aco" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="Ebb-rL-EvB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DNi-5b-aco" secondAttribute="trailing" constant="48" id="F8o-9B-RCl"/>
-                            <constraint firstItem="5iA-LF-Ri6" firstAttribute="top" secondItem="Vd9-CK-Obk" secondAttribute="bottom" constant="93" id="H5b-fK-gCb"/>
-                            <constraint firstItem="Vd9-CK-Obk" firstAttribute="top" secondItem="TF0-fo-2hx" secondAttribute="bottom" constant="33" id="HZG-B4-AGf"/>
-                            <constraint firstItem="TF0-fo-2hx" firstAttribute="top" secondItem="W79-Og-otU" secondAttribute="bottom" constant="21" id="Iza-Jz-t2U"/>
-                            <constraint firstItem="fbe-cS-yMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kyw-c5-Myf"/>
                             <constraint firstItem="ibL-s2-MaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="L51-T5-8DH"/>
-                            <constraint firstItem="W79-Og-otU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="67" id="LMV-v2-e88"/>
-                            <constraint firstItem="Vd9-CK-Obk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="LRo-93-3Oi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5iA-LF-Ri6" secondAttribute="trailing" constant="32" id="Q9C-3x-4Op"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vd9-CK-Obk" secondAttribute="trailing" constant="8" id="StF-gx-OhF"/>
                             <constraint firstItem="5iA-LF-Ri6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XlV-9s-Aar"/>
                             <constraint firstItem="DNi-5b-aco" firstAttribute="top" secondItem="ibL-s2-MaS" secondAttribute="bottom" constant="19" id="Yk2-Gt-9ey"/>
-                            <constraint firstItem="nJM-Uc-4gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Z94-AF-tfd"/>
-                            <constraint firstItem="fbe-cS-yMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="brd-ry-nbM"/>
-                            <constraint firstItem="W79-Og-otU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cb3-97-1aB"/>
-                            <constraint firstItem="W79-Og-otU" firstAttribute="top" secondItem="nJM-Uc-4gV" secondAttribute="bottom" constant="18" id="cd9-d7-1AF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W79-Og-otU" secondAttribute="trailing" constant="8" id="dba-g4-F21"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nJM-Uc-4gV" secondAttribute="trailing" constant="8" id="e7u-gp-40P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbe-cS-yMP" secondAttribute="trailing" constant="16" id="eDt-73-icg"/>
-                            <constraint firstItem="TF0-fo-2hx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="eqO-Ix-kpb"/>
-                            <constraint firstItem="5iA-LF-Ri6" firstAttribute="top" secondItem="fbe-cS-yMP" secondAttribute="bottom" constant="15.5" id="g7O-Nu-tR3"/>
-                            <constraint firstItem="Vd9-CK-Obk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mC2-Pn-yxn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TF0-fo-2hx" secondAttribute="trailing" constant="8" id="mST-27-Rcm"/>
                             <constraint firstItem="ibL-s2-MaS" firstAttribute="top" secondItem="5iA-LF-Ri6" secondAttribute="bottom" constant="-9.5" id="rUN-ud-ag2"/>
-                            <constraint firstItem="nJM-Uc-4gV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uzf-na-XJA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ibL-s2-MaS" secondAttribute="trailing" constant="48" id="wx6-OG-cGF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="5iA-LF-Ri6" id="RHS-MH-ZuA"/>
                         <outlet property="pouleResults" destination="DNi-5b-aco" id="Yjy-38-NAm"/>
                         <outlet property="teamResult" destination="ibL-s2-MaS" id="vJi-72-g7s"/>
                     </connections>

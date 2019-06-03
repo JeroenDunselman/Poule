@@ -27,7 +27,7 @@ class MultiRun {
         
         public var scoreIntervals: [Team: Int] = [Team.A: 0, Team.B: 0, Team.C: 0, Team.D: 0]
         public var avgScoreIntervals: [Team: Int] = [Team.A: 0, Team.B: 0, Team.C: 0, Team.D: 0]
-        
+        //not in use
         public var points: [Team: Int] = [Team.A: 0, Team.B: 0, Team.C: 0, Team.D: 0]
         public var avgPoints: [Team: Int] = [Team.A: 0, Team.B: 0, Team.C: 0, Team.D: 0]
     }
@@ -62,7 +62,7 @@ class MultiRun {
                 results.scoreIntervals[i.team!] = cumulative
                 
                 //poule result
-                var pouleReport: String = ("Team \(i.team!):\n-points: \(i.points), draw: \(i.draw), lost: \(i.lost), won: \(i.won), ")
+                var pouleReport: String = ("Team \(i.team!):\n-points: \(i.points)\n-draw: \(i.draw), lost: \(i.lost), won: \(i.won), ")
                 pouleReport += ("\n-goal/countergoal/interval: \(i.goal)/\(i.countergoal)/\(i.scoreInterval) \n")
                 //                print("\(report)")
                 
@@ -89,21 +89,17 @@ class MultiRun {
         pouleResults = runReport
         
         //under construction
-        var f = 0
+        //Succes percentage from scoreIntervals
+        //process scoreIntervals to account for negatives, add negative values to each
+        var factor = 0
         _ = Team.allCases.map({
-            if let s = results.scoreIntervals[$0] {
-                if s < 0 {f = f + abs(s)}
+            if let score = results.scoreIntervals[$0] {
+                if score < 0 {factor += abs(score)}
             }
         })
-        
-        
-        //Succes percentage from scoreIntervals
-        //process scoreIntervals to account for negatives, add lowest value to each
-//        guard let initial: Int = results.scoreIntervals.values.min() else { return }
-//        let factor = initial * -1
         _ = Team.allCases.map({
-            if let s = results.scoreIntervals[$0] {
-                results.scoreIntervals[$0] = s + f //actor
+            if let score = results.scoreIntervals[$0] {
+                results.scoreIntervals[$0] = score + factor
             }
         })
         
